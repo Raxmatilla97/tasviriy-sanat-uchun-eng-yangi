@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('makets.admin.admin-maket');
+    return view('makets.front.front-default');
 });
 
 Auth::routes();
