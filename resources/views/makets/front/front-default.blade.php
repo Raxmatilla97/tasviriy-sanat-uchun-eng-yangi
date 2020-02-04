@@ -985,16 +985,21 @@
 						
 						<div class="row">
 							<div class="col-sm-4">
-
+							
 								<!-- Begin info box -->
+								<img src="{{ asset('front/assets/img/png/png1.png') }}">
 								<div class="info-box">
-									<span class="info-box-icon"><span class="lnr lnr-screen"></span></span>
+									
+									
+								
 									<div class="info-box-info">
+										
 										<h3 class="info-box-heading"><a href="services-3.html">Web Design</a></h3>
 										<div class="info-box-text tt-ellipsis" style="overflow-wrap: break-word;">
 											Aenean ac consectetur quam. Donec malesuada lacus nec ullamcorper pellentesque praesent ulis. Proin pulvinar scelerisque lorem apti.
 										</div>
 									</div> <!-- /.info-box-info -->
+					
 								</div>
 								<!-- End info box -->
 
@@ -1003,8 +1008,9 @@
 							<div class="col-sm-4">
 
 								<!-- Begin info box -->
+								<img src="{{ asset('front/assets/img/png/png2.png') }}">
 								<div class="info-box">
-									<span class="info-box-icon"><span class="lnr lnr-cog"></span></span>
+								
 									<div class="info-box-info">
 										<h3 class="info-box-heading"><a href="services-3.html">Web Development</a></h3>
 										<div class="info-box-text tt-ellipsis" style="overflow-wrap: break-word;">
@@ -1019,8 +1025,10 @@
 							<div class="col-sm-4">
 
 								<!-- Begin info box -->
+								<img src="{{ asset('front/assets/img/png/png3.png') }}">
 								<div class="info-box">
-									<span class="info-box-icon"><span class="lnr lnr-camera-video"></span></span>
+
+								
 									<div class="info-box-info">
 										<h3 class="info-box-heading"><a href="services-3.html">Motion Graphics</a></h3>
 										<div class="info-box-text tt-ellipsis" style="overflow-wrap: break-word;">
@@ -1034,11 +1042,12 @@
 						</div> <!-- /.row -->
 
 						<div class="row">
+							
 							<div class="col-sm-4">
-
+								<img src="{{ asset('front/assets/img/png/png4.png') }}">
 								<!-- Begin info box -->
 								<div class="info-box">
-									<span class="info-box-icon"><span class="lnr lnr-leaf"></span></span>
+									
 									<div class="info-box-info">
 										<h3 class="info-box-heading"><a href="services-3.html">Illustrations</a></h3>
 										<div class="info-box-text tt-ellipsis" style="overflow-wrap: break-word;">
@@ -1051,10 +1060,10 @@
 							</div> <!-- /.col -->
 
 							<div class="col-sm-4">
-
+								<img style="width: 100%;"  src="{{ asset('front/assets/img/png/images-9.png') }}">
 								<!-- Begin info box -->
 								<div class="info-box">
-									<span class="info-box-icon"><span class="lnr lnr-users"></span></span>
+								
 									<div class="info-box-info">
 										<h3 class="info-box-heading"><a href="services-3.html">Marketing</a></h3>
 										<div class="info-box-text tt-ellipsis" style="overflow-wrap: break-word;">
@@ -1067,11 +1076,13 @@
 							</div> <!-- /.col -->
 
 							<div class="col-sm-4">
-
+								<img style="width: 100%;" src="{{ asset('front/assets/img/png/images-8.png') }}">
 								<!-- Begin info box -->
 								<div class="info-box">
-									<span class="info-box-icon"><span class="lnr lnr-pie-chart"></span></span>
+									
+								
 									<div class="info-box-info">
+									
 										<h3 class="info-box-heading"><a href="services-3.html">Analytics</a></h3>
 										<div class="info-box-text tt-ellipsis" style="overflow-wrap: break-word;">
 											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit necessit officia tempore. Proin pulvinar scelerisque lorem apti.
@@ -1099,9 +1110,11 @@
 
 
 
+           <style>
+		   
+</style>
 
-
-			<section class="call-to-action-section cta-style-2 bg-image" style="background-image: url({{ ('front/assets/img/pattern/pt-2.jpg') }});">
+			<section class="call-to-action-section cta-style-2 bg-image " style="background-image: url({{ ('front/assets/img/pattern/images-7.jpg') }});">
 
 				<!-- Element cover 
 				===================
@@ -1123,8 +1136,8 @@
 							-->
 							<div class="tt-heading tt-heading-xxlg">
 								<div class="tt-heading-inner">
-									<h1 class="tt-heading-title">What Next?</h1>
-									<div class="tt-heading-subtitle">Interested in working with us?</div>
+									<h1 class="tt-heading-title page-header-caption ph-cap-light">What Next?</h1>
+									<div class="tt-heading-subtitle page-header-caption ph-cap-light">Interested in working with us?</div>
 									
 									<!-- Begin zig-zag separator 
 									============================= 
@@ -1145,9 +1158,9 @@
 
 						</div> <!-- /.col -->
 
-						<div class="col-md-6">
+						<div class="col-md-6 page-header-caption ph-cap-light">
 
-							<p>Fusce et velit sed augue rhoncus tempor. Sed ac lacinia augue, nec lacinia felis. Sed sit amet diam leo. Praesent vel malesuada arcu. Donec mattis, arcu vel vehicula feugiat sem turpis.</p>
+							<p><h3>Fusce et velit sed augue rhoncus tempor. Sed ac lacinia augue, nec lacinia felis. Sed sit amet diam leo. Praesent vel malesuada arcu. Donec mattis, arcu vel vehicula feugiat sem turpis.</h3></p>
 							
 							<div class="margin-top-30">
 								<a href="contact.html" class="btn btn-primary btn-lg margin-top-5">Let's Work Together!</a>
@@ -1686,12 +1699,16 @@
 											<div class="info-box-wrap ib-light ib-style-2">
 												
 												<div class="row">
+													
 													<div class="col-sm-6">
-
+														
 														<!-- Begin info box -->
-														<div class="info-box">
+														<div class="info-box" >
+														
 															<span class="info-box-icon"><span class="lnr lnr-screen"></span></span>
-															<div class="info-box-info">
+															
+															<div class="info-box-info " >
+															
 																<h3 class="info-box-heading"><a href="home-landing-3.html">Web Design</a></h3>
 																<div class="info-box-text tt-ellipsis"> <!-- Use class "tt-ellipsis" to enable text element fixed height with ellipsis -->
 																	Aenean ac consectetur quam. Donec malesuada lacus nec ullamcorper pellentesque praesent ulis. Proin pulvinar scelerisque lorem apti.
