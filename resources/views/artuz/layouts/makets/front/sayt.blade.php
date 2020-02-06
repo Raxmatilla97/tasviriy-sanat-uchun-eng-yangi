@@ -230,8 +230,8 @@
 				===================== -->
 
 
-				@yield('navigation', View::make('artuz.layouts.front.pages.navigation'));
-               
+				@yield('navigation')
+            
 			    <!-- End main menu -->
 
 			</div>
@@ -246,8 +246,9 @@
 		*********** Begin body content *********** 
 		************************************** -->
 
-          @yield('content', view::make('artuz.layouts.front.pages.content'));
-
+		<div id="body-content">
+          @yield('content')
+		</div>
 		<!--  End body content  -->
 
 

@@ -18,7 +18,7 @@ class IndexController extends Controller
 
 
 
-        return view('artuz.layouts.makets.front.sayt');
+        return view('artuz.layouts.makets.front.index');
     
     }
 

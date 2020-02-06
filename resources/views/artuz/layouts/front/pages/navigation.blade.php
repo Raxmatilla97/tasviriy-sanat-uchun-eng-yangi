@@ -1,5 +1,5 @@
 
-                @extends('makets.front.front-default')
+                @extends('artuz.layouts.makets.front.sayt')
                 
 
                 @section('navigation')
