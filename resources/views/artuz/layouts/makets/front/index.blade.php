@@ -23,6 +23,41 @@
 
 @endsection
 
+
+@section('info-banner')
+    
+     @include('artuz.layouts.front.pages.info-banner')
+
+@endsection
+
+
+
+@section('articles')
+    
+     @include('artuz.layouts.front.pages.articles')
+
+@endsection
+
+@section('info-2-gramma')
+    
+     @include('artuz.layouts.front.pages.info-2-gramma')
+
+@endsection
+
+
+@section('gallereya')
+    
+     @include('artuz.layouts.front.pages.gallereya')
+
+@endsection
+
+
+@section('video-section')
+    
+     @include('artuz.layouts.front.pages.video-section')
+
+@endsection
+
 {{-- @section('slider')
 
      @include('artuz.layouts.front.');
