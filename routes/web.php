@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('makets.front.front-default');
-});
+Route::get('/', 'IndexController@index')->name('index');
+
+
+
 
 Auth::routes();
 
