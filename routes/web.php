@@ -18,4 +18,4 @@ Route::get('/', 'IndexController@index')->name('index');
 
 Auth::routes();
 
-Route::get('/home', 'AdminPanelController@index')->name('home');
+Route::get('/home', 'admin\AdminPanelController@index')->name('home');

@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\admin;
 
-use App\AdminPanel;
+use App\Http\Controllers\Controller;
+use App\News;
 use Illuminate\Http\Request;
 
-class AdminPanelController extends Controller
+class NewsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,7 @@ class AdminPanelController extends Controller
      */
     public function index()
     {
-        return view('makets.admin.admin-maket');
+        //
     }
 
     /**
@@ -41,10 +42,10 @@ class AdminPanelController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\AdminPanel  $adminPanel
+     * @param  \App\News  $news
      * @return \Illuminate\Http\Response
      */
-    public function show(AdminPanel $adminPanel)
+    public function show(News $news)
     {
         //
     }
@@ -52,10 +53,10 @@ class AdminPanelController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\AdminPanel  $adminPanel
+     * @param  \App\News  $news
      * @return \Illuminate\Http\Response
      */
-    public function edit(AdminPanel $adminPanel)
+    public function edit(News $news)
     {
         //
     }
@@ -64,10 +65,10 @@ class AdminPanelController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\AdminPanel  $adminPanel
+     * @param  \App\News  $news
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, AdminPanel $adminPanel)
+    public function update(Request $request, News $news)
     {
         //
     }
@@ -75,10 +76,10 @@ class AdminPanelController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\AdminPanel  $adminPanel
+     * @param  \App\News  $news
      * @return \Illuminate\Http\Response
      */
-    public function destroy(AdminPanel $adminPanel)
+    public function destroy(News $news)
     {
         //
     }
