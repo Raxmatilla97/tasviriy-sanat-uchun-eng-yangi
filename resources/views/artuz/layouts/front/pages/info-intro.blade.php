@@ -86,7 +86,7 @@
 						<div class="row">
 							
 							<div class="col-sm-4">
-								<img src="{{ asset('front/assets/img/png/png4.png') }}">
+								<img src="{{ asset('front/assets/img/misc/autocad.png') }}">
 								<!-- Begin info box -->
 								<div class="info-box">
 									
@@ -102,7 +102,7 @@
 							</div> <!-- /.col -->
 
 							<div class="col-sm-4">
-								<img style="width: 100%;"  src="{{ asset('front/assets/img/png/images-9.png') }}">
+								<img style="width: 100%;"  src="{{ asset('front/assets/img/misc/chizma.png') }}">
 								<!-- Begin info box -->
 								<div class="info-box">
 								

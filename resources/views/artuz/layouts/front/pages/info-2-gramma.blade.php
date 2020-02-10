@@ -15,7 +15,7 @@
 									* Use class "frame-left" or "frame-right" to enable split box image frame (Effect only on element boxed layout!).
 									* Use class "sbi-shadow" to enable split box image shadow effect (Effect only on element boxed layout!).
 									-->
-									<div class="col-lg-push-6 col-lg-6 col-lg-height split-box-image no-padding bg-image lazy" data-src="{{ ('front/assets/img/misc/1.jpg') }}">
+									<div class="col-lg-push-6 col-lg-6 col-lg-height split-box-image no-padding bg-image lazy" data-src="{{ ('front/assets/img/misc/gallereya-info.png') }}">
 
 										<!-- Split box image height
 										============================
