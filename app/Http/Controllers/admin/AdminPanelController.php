@@ -15,7 +15,7 @@ class AdminPanelController extends Controller
          */
         public function index()
         {
-            return view('artuz.layouts.makets.admin.admin-maket');
+            return view('artuz.layouts.makets.admin.site.index');
         }
 
         /**
