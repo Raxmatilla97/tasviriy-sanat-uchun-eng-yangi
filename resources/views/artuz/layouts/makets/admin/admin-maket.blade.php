@@ -54,9 +54,10 @@
                     <!-- fotter end -->   
 
                 
-                        </div>
+                        
                 <!-- ============ Body content End ============= -->
-                    </div>
+            </div>
+        </div>
                 <!--=============== End app-admin-wrap ================-->
 
         

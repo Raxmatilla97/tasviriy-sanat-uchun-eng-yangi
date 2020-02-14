@@ -18,4 +18,12 @@ Route::get('/', 'IndexController@index')->name('index');
 
 Auth::routes();
 
-Route::get('/admin-panel', 'admin\AdminPanelController@index')->name('admin');
+//Route::get('/admin-panel', 'admin\AdminPanelController@index')->name('admin');
+
+Route::prefix('admin-panel')->group(function () {
+
+    route::get('/', 'admin\AdminPanelController@index')->name('admin');
+    //route::get('users','admin\UserController@index' )->name('users');
+    route::get('articles','admin\ArticleController@index' )->name('articles');
+
+});

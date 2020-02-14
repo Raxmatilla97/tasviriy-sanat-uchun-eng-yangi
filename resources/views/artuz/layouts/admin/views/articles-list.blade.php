@@ -1,0 +1,1061 @@
+@extends('artuz.layouts.makets.admin.site.index')
+    @section('content')
+        
+    
+    <div class="main-content-wrap sidenav-open d-flex flex-column">
+        <div class="main-content">
+                       <div class="breadcrumb">
+        <h1>Version 1</h1>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li>Version 1</li>
+        </ul>
+    </div>
+    
+    <div class="separator-breadcrumb border-top"></div>
+    
+ 
+        <div class="row mt-12">
+            <!-- begin exclusive datatable plugin -->
+            <div class="col-lg-8 col-xl-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="ul-widget__head v-margin">
+                            <div class="ul-widget__head-label">
+                                <h3 class="ul-widget__head-title">
+                                    Exclusive datatable plugin
+                                </h3>
+                            </div>
+                            <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="_dot _inline-dot bg-primary"></span>
+                                <span class="_dot _inline-dot bg-primary"></span>
+                                <span class="_dot _inline-dot bg-primary"></span>
+                            </button>
+                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(697px, 51px, 0px);">
+                                <a class="dropdown-item" href="list.html#">Action</a>
+                                <a class="dropdown-item" href="list.html#">Another action</a>
+                                <a class="dropdown-item" href="list.html#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="list.html#">Separated link</a>
+                            </div>
+                        </div>
+
+                        <div class="ul-widget-body">
+                            <div class="ul-widget3">
+                                <div class="ul-widget6__item--table" style="height: 1000px; overflow-y: scroll;">
+                                    <table class="table ">
+                                        <thead>
+                                            <tr class="ul-widget6__tr--sticky-th">
+                                                <th scope="col">#</th>
+                                                <th scope="col">Company</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Managed By</th>
+                                                <th scope="col">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- start tr -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <label class="checkbox checkbox-outline-info">
+                                                        <input type="checkbox" checked="">
+
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </th>
+                                                <td>
+                                                    <span>
+                                                        <div class="ul-widget_user-card">
+                                                            <div class="ul-widget4__img">
+                                                                <img src="../assets/images/faces/1.jpg" id="userDropdown" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </td>
+                                                <td>11/28/2016</td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-outline-danger p-2 m-1">Processing</span>
+                                                </td>
+                                                <td>
+                                                    <a href="list.html" class="ul-widget4__title d-block">UI Lib</a>
+                                                    <span>Angular 2,Vue.js </span>
+                                                </td>
+                                                <td class="">
+                                                    <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(641px, 142px, 0px);">
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Bar-Chart-4"> </i>
+                                                            Export</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Data-Save"> </i>
+                                                            Save
+                                                        </a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Duplicate-Layer"></i>
+                                                            Import</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Folder-Download"></i>
+                                                            Update</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Gears-2"></i>
+                                                            Customize</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end tr -->
+                                            <!-- start tr -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <label class="checkbox checkbox-outline-info">
+                                                        <input type="checkbox" checked="">
+
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </th>
+                                                <td>
+                                                    <span>
+                                                        <div class="ul-widget_user-card">
+                                                            <div class="ul-widget4__img">
+                                                                <img src="../assets/images/faces/10.jpg" id="userDropdown" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </td>
+                                                <td>11/28/2016</td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-outline-info p-2 m-1">Processing</span>
+                                                </td>
+                                                <td>
+                                                    <a href="list.html" class="ul-widget4__title d-block">UI Lib</a>
+                                                    <span>Angular 2,Vue.js </span>
+                                                </td>
+                                                <td class="">
+                                                    <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(641px, 211px, 0px);">
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Bar-Chart-4"> </i>
+                                                            Export</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Data-Save"> </i>
+                                                            Save
+                                                        </a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Duplicate-Layer"></i>
+                                                            Import</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Folder-Download"></i>
+                                                            Update</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Gears-2"></i>
+                                                            Customize</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end tr -->
+                                            <!-- start tr -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <label class="checkbox checkbox-outline-info">
+                                                        <input type="checkbox" checked="">
+
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </th>
+                                                <td>
+                                                    <span>
+                                                        <div class="ul-widget_user-card">
+                                                            <div class="ul-widget4__img">
+                                                                <img src="../assets/images/faces/12.jpg" id="userDropdown" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </td>
+                                                <td>11/28/2016</td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-outline-success p-2 m-1">Processing</span>
+                                                </td>
+                                                <td>
+                                                    <a href="list.html" class="ul-widget4__title d-block">UI Lib</a>
+                                                    <span>Angular 2,Vue.js </span>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 33px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Bar-Chart-4"> </i>
+                                                            Export</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Data-Save"> </i>
+                                                            Save
+                                                        </a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Duplicate-Layer"></i>
+                                                            Import</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Folder-Download"></i>
+                                                            Update</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Gears-2"></i>
+                                                            Customize</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end tr -->
+                                            <!-- start tr -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <label class="checkbox checkbox-outline-info">
+                                                        <input type="checkbox" checked="">
+
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </th>
+                                                <td>
+                                                    <span>
+                                                        <div class="ul-widget_user-card">
+                                                            <div class="ul-widget4__img">
+                                                                <img src="../assets/images/faces/13.jpg" id="userDropdown" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </td>
+                                                <td>11/28/2016</td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-outline-primary p-2 m-1">Processing</span>
+                                                </td>
+                                                <td>
+                                                    <a href="list.html" class="ul-widget4__title d-block">UI Lib</a>
+                                                    <span>Angular 2,Vue.js </span>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 33px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Bar-Chart-4"> </i>
+                                                            Export</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Data-Save"> </i>
+                                                            Save
+                                                        </a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Duplicate-Layer"></i>
+                                                            Import</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Folder-Download"></i>
+                                                            Update</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Gears-2"></i>
+                                                            Customize</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end tr -->
+                                            <!-- start tr -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <label class="checkbox checkbox-outline-info">
+                                                        <input type="checkbox" checked="">
+
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </th>
+                                                <td>
+                                                    <span>
+                                                        <div class="ul-widget_user-card">
+                                                            <div class="ul-widget4__img">
+                                                                <img src="../assets/images/faces/15.jpg" id="userDropdown" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </td>
+                                                <td>11/28/2016</td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-outline-danger p-2 m-1">Processing</span>
+                                                </td>
+                                                <td>
+                                                    <a href="list.html" class="ul-widget4__title d-block">UI Lib</a>
+                                                    <span>Angular 2,Vue.js </span>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 33px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Bar-Chart-4"> </i>
+                                                            Export</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Data-Save"> </i>
+                                                            Save
+                                                        </a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Duplicate-Layer"></i>
+                                                            Import</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Folder-Download"></i>
+                                                            Update</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Gears-2"></i>
+                                                            Customize</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end tr -->
+                                            <!-- start tr -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <label class="checkbox checkbox-outline-info">
+                                                        <input type="checkbox" checked="">
+
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </th>
+                                                <td>
+                                                    <span>
+                                                        <div class="ul-widget_user-card">
+                                                            <div class="ul-widget4__img">
+                                                                <img src="../assets/images/faces/16.jpg" id="userDropdown" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </td>
+                                                <td>11/28/2016</td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-outline-warning p-2 m-1">Processing</span>
+                                                </td>
+                                                <td>
+                                                    <a href="list.html" class="ul-widget4__title d-block">UI Lib</a>
+                                                    <span>Angular 2,Vue.js </span>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 33px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Bar-Chart-4"> </i>
+                                                            Export</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Data-Save"> </i>
+                                                            Save
+                                                        </a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Duplicate-Layer"></i>
+                                                            Import</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Folder-Download"></i>
+                                                            Update</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Gears-2"></i>
+                                                            Customize</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end tr -->
+                                            <!-- start tr -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <label class="checkbox checkbox-outline-info">
+                                                        <input type="checkbox" checked="">
+
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </th>
+                                                <td>
+                                                    <span>
+                                                        <div class="ul-widget_user-card">
+                                                            <div class="ul-widget4__img">
+                                                                <img src="../assets/images/faces/17.jpg" id="userDropdown" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </td>
+                                                <td>11/28/2016</td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-outline-success p-2 m-1">Processing</span>
+                                                </td>
+                                                <td>
+                                                    <a href="list.html" class="ul-widget4__title d-block">UI Lib</a>
+                                                    <span>Angular 2,Vue.js </span>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 33px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Bar-Chart-4"> </i>
+                                                            Export</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Data-Save"> </i>
+                                                            Save
+                                                        </a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Duplicate-Layer"></i>
+                                                            Import</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Folder-Download"></i>
+                                                            Update</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Gears-2"></i>
+                                                            Customize</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end tr -->
+                                            <!-- start tr -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <label class="checkbox checkbox-outline-info">
+                                                        <input type="checkbox" checked="">
+
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </th>
+                                                <td>
+                                                    <span>
+                                                        <div class="ul-widget_user-card">
+                                                            <div class="ul-widget4__img">
+                                                                <img src="../assets/images/faces/2.jpg" id="userDropdown" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </td>
+                                                <td>11/28/2016</td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-outline-info p-2 m-1">Processing</span>
+                                                </td>
+                                                <td>
+                                                    <a href="list.html" class="ul-widget4__title d-block">UI Lib</a>
+                                                    <span>Angular 2,Vue.js </span>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 33px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Bar-Chart-4"> </i>
+                                                            Export</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Data-Save"> </i>
+                                                            Save
+                                                        </a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Duplicate-Layer"></i>
+                                                            Import</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Folder-Download"></i>
+                                                            Update</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Gears-2"></i>
+                                                            Customize</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end tr -->
+                                            <!-- start tr -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <label class="checkbox checkbox-outline-info">
+                                                        <input type="checkbox" checked="">
+
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </th>
+                                                <td>
+                                                    <span>
+                                                        <div class="ul-widget_user-card">
+                                                            <div class="ul-widget4__img">
+                                                                <img src="../assets/images/faces/3.jpg" id="userDropdown" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </td>
+                                                <td>11/28/2016</td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-outline-warning p-2 m-1">Processing</span>
+                                                </td>
+                                                <td>
+                                                    <a href="list.html" class="ul-widget4__title d-block">UI Lib</a>
+                                                    <span>Angular 2,Vue.js </span>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 33px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Bar-Chart-4"> </i>
+                                                            Export</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Data-Save"> </i>
+                                                            Save
+                                                        </a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Duplicate-Layer"></i>
+                                                            Import</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Folder-Download"></i>
+                                                            Update</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Gears-2"></i>
+                                                            Customize</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end tr -->
+                                            <!-- start tr -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <label class="checkbox checkbox-outline-info">
+                                                        <input type="checkbox" checked="">
+
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </th>
+                                                <td>
+                                                    <span>
+                                                        <div class="ul-widget_user-card">
+                                                            <div class="ul-widget4__img">
+                                                                <img src="../assets/images/faces/4.jpg" id="userDropdown" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </td>
+                                                <td>11/28/2016</td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-outline-success p-2 m-1">Processing</span>
+                                                </td>
+                                                <td>
+                                                    <a href="list.html" class="ul-widget4__title d-block">UI Lib</a>
+                                                    <span>Angular 2,Vue.js </span>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 33px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Bar-Chart-4"> </i>
+                                                            Export</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Data-Save"> </i>
+                                                            Save
+                                                        </a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Duplicate-Layer"></i>
+                                                            Import</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Folder-Download"></i>
+                                                            Update</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Gears-2"></i>
+                                                            Customize</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end tr -->
+                                            <!-- start tr -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <label class="checkbox checkbox-outline-info">
+                                                        <input type="checkbox" checked="">
+
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </th>
+                                                <td>
+                                                    <span>
+                                                        <div class="ul-widget_user-card">
+                                                            <div class="ul-widget4__img">
+                                                                <img src="../assets/images/faces/5.jpg" id="userDropdown" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </td>
+                                                <td>11/28/2016</td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-outline-info p-2 m-1">Processing</span>
+                                                </td>
+                                                <td>
+                                                    <a href="list.html" class="ul-widget4__title d-block">UI Lib</a>
+                                                    <span>Angular 2,Vue.js </span>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 33px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Bar-Chart-4"> </i>
+                                                            Export</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Data-Save"> </i>
+                                                            Save
+                                                        </a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Duplicate-Layer"></i>
+                                                            Import</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Folder-Download"></i>
+                                                            Update</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Gears-2"></i>
+                                                            Customize</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end tr -->
+                                            <!-- start tr -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <label class="checkbox checkbox-outline-info">
+                                                        <input type="checkbox" checked="">
+
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </th>
+                                                <td>
+                                                    <span>
+                                                        <div class="ul-widget_user-card">
+                                                            <div class="ul-widget4__img">
+                                                                <img src="../assets/images/faces/9.jpg" id="userDropdown" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </td>
+                                                <td>11/28/2016</td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-outline-danger p-2 m-1">Processing</span>
+                                                </td>
+                                                <td>
+                                                    <a href="list.html" class="ul-widget4__title d-block">UI Lib</a>
+                                                    <span>Angular 2,Vue.js </span>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                        <span class="_dot _inline-dot bg-primary"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 33px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Bar-Chart-4"> </i>
+                                                            Export</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Data-Save"> </i>
+                                                            Save
+                                                        </a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Duplicate-Layer"></i>
+                                                            Import</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Folder-Download"></i>
+                                                            Update</a>
+                                                        <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                                            <i class="i-Gears-2"></i>
+                                                            Customize</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end tr -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="list.html#">Previous</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="list.html#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="list.html#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="list.html#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="list.html#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end::exclusive datatable plugin  -->
+
+
+
+           
+
+            <!-- begin::latest log -->
+            <div class="col-lg-4 col-xl-4 mt-4 mb-4">
+                
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="ul-widget__head pb-20 v-margin">
+                                <div class="ul-widget__head-label">
+                                    <h3 class="ul-widget__head-title">
+                                        Authors Profit
+                                    </h3>
+                                </div>
+                                <button type="button" class="btn btn-info dropdown-toggle _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Latest
+                                </button>
+                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 33px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                    <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                        <i class="i-Bar-Chart-4"> </i>
+                                        Export</a>
+                                    <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                        <i class="i-Data-Save"> </i>
+                                        Save
+                                    </a>
+                                    <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                        <i class="i-Duplicate-Layer"></i>
+                                        Import</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                        <i class="i-Folder-Download"></i>
+                                        Update</a>
+                                    <a class="dropdown-item ul-widget__link--font" href="list.html#">
+                                        <i class="i-Gears-2"></i>
+                                        Customize</a>
+                                </div>
+                            </div>
+                            <div class="ul-widget__body">
+                                <div class="ul-widget1">
+                                    <div class="ul-widget4__item ul-widget4__users">
+                                        <div class="ul-widget4__img">
+                                            <img src="../assets/images/faces/1.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        </div>
+                                        <div class="ul-widget2__info ul-widget4__users-info">
+                                            <a href="list.html#" class="ul-widget2__title">
+                                                Anna Strong
+                                            </a>
+                                            <span href="#" class="ul-widget2__username">
+                                                Visual Designer,Google Inc
+                                            </span>
+                                        </div>
+                                        <span class="ul-widget4__number t-font-boldest text-success">+500</span>
+                                    </div>
+    
+                                    <div class="ul-widget4__item ul-widget4__users">
+                                        <div class="ul-widget4__img">
+                                            <img src="../assets/images/faces/2.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        </div>
+                                        <div class="ul-widget2__info ul-widget4__users-info">
+                                            <a href="list.html#" class="ul-widget2__title">
+                                                Will Smith
+                                            </a>
+                                            <span href="#" class="ul-widget2__username">
+                                                Developer
+                                            </span>
+                                        </div>
+                                        <span class="ul-widget4__number t-font-boldest text-danger">+900</span>
+                                    </div>
+    
+                                    <div class="ul-widget4__item ul-widget4__users">
+                                        <div class="ul-widget4__img">
+                                            <img src="../assets/images/faces/3.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        </div>
+                                        <div class="ul-widget2__info ul-widget4__users-info">
+                                            <a href="list.html#" class="ul-widget2__title">
+                                                Will Smith
+                                            </a>
+                                            <span href="#" class="ul-widget2__username">
+                                                Developer
+                                            </span>
+                                        </div>
+                                        <span class="ul-widget4__number t-font-boldest text-primary">+700</span>
+                                    </div>
+                                    <div class="ul-widget4__item ul-widget4__users">
+                                        <div class="ul-widget4__img">
+                                            <img src="../assets/images/faces/4.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        </div>
+                                        <div class="ul-widget2__info ul-widget4__users-info">
+                                            <a href="list.html#" class="ul-widget2__title">
+                                                Megan Fox
+                                            </a>
+                                            <span href="#" class="ul-widget2__username">
+                                                UI/UX
+                                            </span>
+                                        </div>
+                                        <span class="ul-widget4__number t-font-boldest text-warning">+100</span>
+                                    </div>
+                                    <!-- <div class="ul-widget4__item ul-widget4__users">
+    <div class="ul-widget4__img">
+    <img src="http://gull-html-laravel.ui-lib.com/assets/images/faces/5.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    </div>
+    <div class="ul-widget2__info ul-widget4__users-info">
+    <a href="#" class="ul-widget2__title">
+    Ryan Fox
+    </a>							 
+    <span href="#" class="ul-widget2__username">
+    Backend Developer
+    </span>							 	 
+    </div>
+    <span class="ul-widget4__number t-font-boldest text-info">+100</span>
+    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <br>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="ul-widget__head">
+                            <div class="ul-widget__head-label">
+                                <h3 class="ul-widget__head-title">
+                                    Latest Log
+                                </h3>
+                            </div>
+                            <div class="ul-widget__head-toolbar">
+                                <ul class="nav nav-tabs nav-tabs-line nav-tabs-bold ul-widget-nav-tabs-line" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active show" data-toggle="tab" href="list.html#__g-widget-s6-tab1-content" role="tab" aria-selected="true">
+                                            Today
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="list.html#__g-widget-s6-tab2-content" role="tab" aria-selected="false">
+                                            Month
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ul-widget__body">
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="__g-widget-s6-tab1-content">
+                                    <div class="ul-widget-s6__items">
+                                        <div class="ul-widget-s6__item">
+                                            <span class="ul-widget-s6__badge">
+                                                <p class="badge-dot-primary ul-widget6__dot"></p>
+                                            </span>
+                                            <span class="ul-widget-s6__text">12 new users registered</span>
+                                            <span class="ul-widget-s6__time">Just Now</span>
+                                        </div>
+                                        <div class="ul-widget-s6__item">
+                                            <span class="ul-widget-s6__badge">
+                                                <p class="badge-dot-success ul-widget6__dot"></p>
+                                            </span>
+                                            <p class="ul-widget-s6__text">
+                                                System shutdown
+                                                <span class="badge badge-pill badge-primary  m-2">Primary</span>
+                                            </p>
+                                            <span class="ul-widget-s6__time">14 mins</span>
+                                        </div>
+
+                                        <div class="ul-widget-s6__item">
+                                            <span class="ul-widget-s6__badge">
+                                                <p class="badge-dot-warning ul-widget6__dot"></p>
+                                            </span>
+                                            <span class="ul-widget-s6__text">System error -
+                                                <a href="list.html" class="typo_link text-danger">
+                                                    Danger state text</a>
+                                            </span>
+                                            <span class="ul-widget-s6__time">2 hrs </span>
+                                        </div>
+                                        <div class="ul-widget-s6__item">
+                                            <span class="ul-widget-s6__badge">
+                                                <p class="badge-dot-danger ul-widget6__dot"></p>
+                                            </span>
+                                            <span class="ul-widget-s6__text">12 new users registered</span>
+                                            <span class="ul-widget-s6__time">Just Now</span>
+                                        </div>
+                                        <div class="ul-widget-s6__item">
+                                            <span class="ul-widget-s6__badge">
+                                                <p class="badge-dot-info ul-widget6__dot"></p>
+                                            </span>
+                                            <p class="ul-widget-s6__text">
+                                                System shutdown
+                                                <span class="badge badge-pill badge-success  m-2">Primary</span>
+                                            </p>
+                                            <span class="ul-widget-s6__time">14 mins</span>
+                                        </div>
+
+                                        <div class="ul-widget-s6__item">
+                                            <span class="ul-widget-s6__badge">
+                                                <p class="badge-dot-dark ul-widget6__dot"></p>
+                                            </span>
+                                            <span class="ul-widget-s6__text">System error -
+                                                <a href="list.html" class="typo_link text-danger">
+                                                    Danger state text</a>
+                                            </span>
+                                            <span class="ul-widget-s6__time">2 hrs </span>
+                                        </div>
+                                        <div class="ul-widget-s6__item">
+                                            <span class="ul-widget-s6__badge">
+                                                <p class="badge-dot-primary ul-widget6__dot"></p>
+                                            </span>
+                                            <span class="ul-widget-s6__text">12 new users registered</span>
+                                            <span class="ul-widget-s6__time">Just Now</span>
+                                        </div>
+                                        <div class="ul-widget-s6__item">
+                                            <span class="ul-widget-s6__badge">
+                                                <p class="badge-dot-success ul-widget6__dot"></p>
+                                            </span>
+                                            <p class="ul-widget-s6__text">
+                                                System shutdown
+                                                <span class="badge badge-pill badge-danger  m-2">Primary</span>
+                                            </p>
+                                            <span class="ul-widget-s6__time">14 mins</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="__g-widget-s6-tab2-content">
+                                    <div class="ul-widget2">
+                                        <div class="ul-widget-s6__items">
+                                            <div class="ul-widget-s6__item">
+                                                <span class="ul-widget-s6__badge">
+                                                    <p class="badge-dot-danger ul-widget6__dot"></p>
+                                                </span>
+                                                <span class="ul-widget-s6__text">44 new users registered</span>
+                                                <span class="ul-widget-s6__time">Just Now</span>
+                                            </div>
+                                            <div class="ul-widget-s6__item">
+                                                <span class="ul-widget-s6__badge">
+                                                    <p class="badge-dot-warning ul-widget6__dot"></p>
+                                                </span>
+                                                <p class="ul-widget-s6__text">
+                                                    System shutdown
+                                                    <span class="badge badge-pill badge-primary  m-2">Primary</span>
+                                                </p>
+                                                <span class="ul-widget-s6__time">14 mins</span>
+                                            </div>
+
+                                            <div class="ul-widget-s6__item">
+                                                <span class="ul-widget-s6__badge">
+                                                    <p class="badge-dot-primary ul-widget6__dot"></p>
+                                                </span>
+                                                <span class="ul-widget-s6__text">System error -
+                                                    <a href="list.html" class="typo_link text-danger">
+                                                        Danger state text</a>
+                                                </span>
+                                                <span class="ul-widget-s6__time">2 hrs </span>
+                                            </div>
+                                            <div class="ul-widget-s6__item">
+                                                <span class="ul-widget-s6__badge">
+                                                    <p class="badge-dot-danger ul-widget6__dot"></p>
+                                                </span>
+                                                <span class="ul-widget-s6__text">12 new users registered</span>
+                                                <span class="ul-widget-s6__time">Just Now</span>
+                                            </div>
+                                            <div class="ul-widget-s6__item">
+                                                <span class="ul-widget-s6__badge">
+                                                    <p class="badge-dot-info ul-widget6__dot"></p>
+                                                </span>
+                                                <p class="ul-widget-s6__text">
+                                                    System shutdown
+                                                    <span class="badge badge-pill badge-success  m-2">Primary</span>
+                                                </p>
+                                                <span class="ul-widget-s6__time">14 mins</span>
+                                            </div>
+
+                                            <div class="ul-widget-s6__item">
+                                                <span class="ul-widget-s6__badge">
+                                                    <p class="badge-dot-dark ul-widget6__dot"></p>
+                                                </span>
+                                                <span class="ul-widget-s6__text">System error -
+                                                    <a href="list.html" class="typo_link text-danger">
+                                                        Danger state text</a>
+                                                </span>
+                                                <span class="ul-widget-s6__time">2 hrs </span>
+                                            </div>
+                                            <div class="ul-widget-s6__item">
+                                                <span class="ul-widget-s6__badge">
+                                                    <p class="badge-dot-primary ul-widget6__dot"></p>
+                                                </span>
+                                                <span class="ul-widget-s6__text">12 new users registered</span>
+                                                <span class="ul-widget-s6__time">Just Now</span>
+                                            </div>
+                                            <div class="ul-widget-s6__item">
+                                                <span class="ul-widget-s6__badge">
+                                                    <p class="badge-dot-success ul-widget6__dot"></p>
+                                                </span>
+                                                <span class="ul-widget-s6__text">System shutdown
+                                                    <span class="badge badge-pill badge-danger  m-2">Primary</span></span>
+                                                <span class="ul-widget-s6__time">14 mins</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            
+            
+            <!-- end::latest log -->
+        </div>
+
+
+    
+    </div>
+    
+    
+        </div>
+    </div>
+    
+    
+        @endsection
