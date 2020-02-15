@@ -15,7 +15,10 @@ class ArticleController extends Controller
      */
     public function index()
     {
-     return view('artuz.layouts.admin.views.articles-list');
+        $yangiliklar = Article::latest()->paginate(5);
+
+          //dd($yangiliklar);
+     return view('artuz.layouts.admin.views.articles-list', compact('yangiliklar'))->with('i',(request()->input('page', 1) -1) *5);
     }
 
     /**

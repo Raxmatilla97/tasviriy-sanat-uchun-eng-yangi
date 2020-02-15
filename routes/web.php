@@ -24,6 +24,10 @@ Route::prefix('admin-panel')->group(function () {
 
     route::get('/', 'admin\AdminPanelController@index')->name('admin');
     //route::get('users','admin\UserController@index' )->name('users');
-    route::get('articles','admin\ArticleController@index' )->name('articles');
+    route::resource('yangiliklar','admin\ArticleController' )->names([
+        'create' => 'yangilik.qoshish',
+        'index' => 'yangiliklar',
+        
+    ]);
 
 });
