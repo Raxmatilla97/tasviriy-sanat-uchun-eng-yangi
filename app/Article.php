@@ -22,7 +22,7 @@ class Article extends Model
         // yangiliklar bo'limlarini bog'lash
        public function category(){
 
-        return $this->hasOne('App\ArticlCategory', 'id', 'cate_id');
+        return $this->hasOne(ArticlCategory::class, 'id', 'cate_id');
 
        }
        // Users tablitsiyasini bog'lash
