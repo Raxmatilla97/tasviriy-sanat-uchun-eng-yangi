@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Article;
+
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -17,8 +18,11 @@ class ArticleController extends Controller
     {
         $yangiliklar = Article::latest()->paginate(5);
 
-          //dd($yangiliklar);
-     return view('artuz.layouts.admin.views.articles-list', compact('yangiliklar'))->with('i',(request()->input('page', 1) -1) *5);
+
+
+
+
+     return view('artuz.layouts.admin.views.articles-list', compact('yangiliklar'))->with(['posts'=>$user->posts], 'i',(request()->input('page', 1) -1) *5);
     }
 
     /**

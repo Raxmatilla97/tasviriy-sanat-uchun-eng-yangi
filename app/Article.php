@@ -2,6 +2,7 @@
 
 namespace App;
 use App\ArticlCategory;
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
@@ -26,9 +27,9 @@ class Article extends Model
 
        }
        // Users tablitsiyasini bog'lash
+
+
        public function users(){
-
-        return $this->hasOne('App\User', 'id', 'user_id');
-
-       }
+        return $this->belongsTo(User::class);
+    }
 }
