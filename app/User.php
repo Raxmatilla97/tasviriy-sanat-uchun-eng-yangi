@@ -16,6 +16,9 @@ class User extends Authenticatable
      *
      * @var array
      */
+
+
+
     protected $fillable = [
         'name', 'email', 'password',
     ];
@@ -38,9 +41,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function article(){
+    public function articles(){
         return $this->hasMany(Article::class);
     }
+
+
+
+
     public function getPostsCountAttribute(){
         return $this->article()->count();
     }

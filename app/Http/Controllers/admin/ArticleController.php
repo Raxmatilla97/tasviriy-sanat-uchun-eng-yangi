@@ -4,6 +4,9 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Article;
+use App\User;
+use Illuminate\Support\Facades\DB;
+
 
 use Illuminate\Http\Request;
 
@@ -16,13 +19,33 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $yangiliklar = Article::latest()->paginate(5);
+        $articles = Article::latest()->paginate(5);
+
+
+        $users = User::leftJoin('articles', 'users.id', '=', 'articles.user_id')
+
+        ->take(5)
+            //->select('users.id', 'contacts.phone', 'orders.price')
+            ->get();
 
 
 
 
+        // $users = User::leftJoin('articles', 'articles.user_id', '=', 'users.id')
 
-     return view('artuz.layouts.admin.views.articles-list', compact('yangiliklar'))->with(['posts'=>$user->posts], 'i',(request()->input('page', 1) -1) *5);
+
+        // ->get();
+
+
+         // dd($yangiliklar);
+        //dd($article->title);
+        // foreach($user2 as $item){
+        //     dump($item->key);
+
+        // }
+
+
+    return view('artuz.layouts.admin.views.articles-list', compact('articles','users'))->with('i',(request()->input('page', 1) -1) *5);
     }
 
     /**
@@ -32,7 +55,9 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        //
+
+
+        return view('artuz.layouts.admin.creaters.yangiliklar');
     }
 
     /**

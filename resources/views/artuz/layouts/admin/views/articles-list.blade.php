@@ -58,7 +58,7 @@
                                         <tbody>
 
 
-                                            @foreach ($yangiliklar as $item)
+                                            @foreach ($articles as $item)
                                                <!-- start tr -->
 
                                             <tr>
@@ -188,23 +188,10 @@
                             </div>
                             <div class="ul-widget__body">
                                 <div class="ul-widget1">
-                                    <div class="ul-widget4__item ul-widget4__users">
-                                        <div class="ul-widget4__img">
-                                            <img src="../assets/images/faces/1.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        </div>
-                                        <div class="ul-widget2__info ul-widget4__users-info">
-                                            <a href="list.html#" class="ul-widget2__title">
-                                                Anna Strong
-                                            </a>
-                                            <span href="#" class="ul-widget2__username">
-                                                Visual Designer,Google Inc
-                                            </span>
-                                        </div>
-                                        <span class="ul-widget4__number t-font-boldest text-success">+500</span>
-                                    </div>
 
-                                     @foreach ($yangiliklar as $item)
-                                         <?php dd($item->users); ?>
+
+                                     @foreach ($users as $item)
+
 
 
                                     <div class="ul-widget4__item ul-widget4__users">
@@ -213,46 +200,19 @@
                                         </div>
                                         <div class="ul-widget2__info ul-widget4__users-info">
                                             <a href="list.html#" class="ul-widget2__title">
-                                                Will Smith
+                                               {{$item->name}}
                                             </a>
                                             <span href="#" class="ul-widget2__username">
                                                 Developer
                                             </span>
                                         </div>
-                                        <span class="ul-widget4__number t-font-boldest text-danger">+900</span>
+                                        <span class="ul-widget4__number t-font-boldest text-danger">{{ $item->alias }}</span>
                                     </div>
 
 
                                     @endforeach
 
-                                    <div class="ul-widget4__item ul-widget4__users">
-                                        <div class="ul-widget4__img">
-                                            <img src="../assets/images/faces/3.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        </div>
-                                        <div class="ul-widget2__info ul-widget4__users-info">
-                                            <a href="list.html#" class="ul-widget2__title">
-                                                Will Smith
-                                            </a>
-                                            <span href="#" class="ul-widget2__username">
-                                                Developer
-                                            </span>
-                                        </div>
-                                        <span class="ul-widget4__number t-font-boldest text-primary">+700</span>
-                                    </div>
-                                    <div class="ul-widget4__item ul-widget4__users">
-                                        <div class="ul-widget4__img">
-                                            <img src="../assets/images/faces/4.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        </div>
-                                        <div class="ul-widget2__info ul-widget4__users-info">
-                                            <a href="list.html#" class="ul-widget2__title">
-                                                Megan Fox
-                                            </a>
-                                            <span href="#" class="ul-widget2__username">
-                                                UI/UX
-                                            </span>
-                                        </div>
-                                        <span class="ul-widget4__number t-font-boldest text-warning">+100</span>
-                                    </div>
+
                                     <!-- <div class="ul-widget4__item ul-widget4__users">
     <div class="ul-widget4__img">
     <img src="http://gull-html-laravel.ui-lib.com/assets/images/faces/5.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

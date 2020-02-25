@@ -4,6 +4,8 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\AdminPanel;
+use App\User;
+
 use Illuminate\Http\Request;
 
 class AdminPanelController extends Controller
@@ -15,7 +17,21 @@ class AdminPanelController extends Controller
          */
         public function index()
         {
-            return view('artuz.layouts.makets.admin.site.index');
+
+
+
+            $users = User::where('id', '>', 0)->count();
+
+            return view('artuz.layouts.makets.admin.site.index', compact('users'));
+
+
+
+            // barcha kiritilgan yangiliklarni sanaydi.
+        // $users = User::join('articles', 'users.id', '=', 'articles.user_id')
+        // ->select(DB::raw('count(articles.*) as articles_count'))
+        // ->orderBy('articles_count', 'desc')
+        // ->get();
+
         }
 
         /**

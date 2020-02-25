@@ -27,7 +27,7 @@ Route::prefix('admin-panel')->group(function () {
     route::resource('yangiliklar','admin\ArticleController' )->names([
         'create' => 'yangilik.qoshish',
         'index' => 'yangiliklar',
-        
+
     ]);
 
 });

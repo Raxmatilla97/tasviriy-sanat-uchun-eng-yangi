@@ -40,7 +40,7 @@
 
             <li class="nav-item ">
                 <a class=""
-            href="">
+            href="{{ route('yangilik.qoshish')}}">
                     <i class="nav-icon i-Clock-3"></i>
             <span class="item-name">{{ __("Yangilik qo'shish")}}</span>
                 </a>
