@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Guruhlar extends Migration
+class CreateKurators extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class Guruhlar extends Migration
      */
     public function up()
     {
-        Schema::create('guruhlar', function (Blueprint $table) {
+        Schema::create('kurators', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title');
-            $table->string('alias');
-
+            $table->unsignedBigInteger('oqituv_id');
+            $table->foreign('oqituv_id')->references('id')->on('oqituvchilar');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class Guruhlar extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('guruhlar');
+        Schema::dropIfExists('kurators');
     }
 }

@@ -11,14 +11,19 @@ class Student extends Model
             'ismi',
             'familyasi',
             'sharifi',
-            'yashash manzili',
+            'yashash_manzili',
             'tell_nomer',
             'surat',
             'pass_num',
             'pass_ser',
             'tugulgan_kun',
-            'guruh',
+            'guruh_id',
             'talim_shakli',
+            'pass_copy',
+            'tugulgan_oy',
+            'tugulgan_yil',
+            'tugulgan_joy',
+
     ];
 
     protected $primaryKey = 'id';

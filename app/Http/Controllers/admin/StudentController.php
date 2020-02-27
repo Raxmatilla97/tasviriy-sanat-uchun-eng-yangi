@@ -15,7 +15,7 @@ class StudentController extends Controller
      */
     public function index(Request $request)
     {
-        $data = $request->all();
+        $data = Student::all();
 
         return view('artuz.layouts.admin.views.students', compact('data'));
     }
@@ -54,24 +54,28 @@ class StudentController extends Controller
 
         ]);
 
-        $image = $request->file('surat');
 
-        $image_name = rand(). '.' . $image->getClientOriginalExtension();
-        $image->move(public_path('images'), $image_name);
-        $input_data = array(
-            'ismi' => $request->ismi,
-            'familyasi' => $request->familyasi,
-            'sharifi' => $request->sharifi,
-            'yashash_manzili' => $request->yashash_manzili,
-            'tell_nomer' => $request->tell_nomer,
-            'surat' => $request->surat,
-            'pass_num' => $request->pass_num,
-            'pass_ser' => $request->pass_ser,
-            'tugulgan_kun' => $request->tugulgan_kun,
-            'guruh' =>  $request->guruh,
-            'talim_shakli' =>  $request->talim_shakli,
-            'pass_copy' =>  $request->pass_copy
-        );
+    //     $input_data = array(
+    //         'ismi' => $request->ismi,
+    //         'familyasi' => $request->familyasi,
+    //         'sharifi' => $request->sharifi,
+    //         'yashash_manzili' => $request->yashash_manzili,
+    //         'tell_nomer' => $request->tell_nomer,
+    //         'surat' => $request->surat,
+    //         'pass_num' => $request->pass_num,
+    //         'pass_ser' => $request->pass_ser,
+    //         'tugulgan_kun' => $request->tugulgan_kun,
+    //         'guruh_id' =>  $request->guruh,
+    //         'talim_shakli' =>  $request->talim_shakli,
+    //         'pass_copy' =>  $request->pass_copy
+    //     );
+
+    //    $data = Student::create($input_data);
+           Student::create($request->all());
+                //dd( $request);
+
+
+        return redirect()->route('talabalar.index')->with('Success', "Talaba qo'shildi");
     }
 
     /**

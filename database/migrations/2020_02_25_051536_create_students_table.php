@@ -22,13 +22,15 @@ class CreateStudentsTable extends Migration
             $table->string('tell_nomer');
             $table->string('surat');
             $table->string('pass_num');
-            $table->string('pass_ser');
+            $table->string('pass_ser')->default('Xozircha yoq');
             $table->string('tugulgan_kun');
-            $table->unsignedBigInteger('guruh_id')->default('1');
+            $table->string('tugulgan_oy');
+            $table->string('tugulgan_yil');
+            $table->string('tugulgan_joy');
+
             $table->string('talim_shakli');
              // qo'shimcha ishlar shu joydan davom etadi, masalan kurator kim, bu talaba hozir o'qivotimi yoki akademik olib ketdimi kabilar uchun.
             $table->string('pass_copy');
-            $table->foreign('guruh_id')->references('id')->on('users');
 
             $table->timestamps();
         });

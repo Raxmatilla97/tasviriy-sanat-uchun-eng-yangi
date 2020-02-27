@@ -26,9 +26,27 @@
                                     {{ __("Maqola, Yangiliklar, Elonlar ro'yhatlari") }}
                                 </h3>
                             </div>
+                                @if($errors->any())
 
+                                <div class="alert alert-danger">
+                                    <strong>XATOLIK!</strong>
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
 
+                                </div>
 
+                                @endif
+
+                                @if ($message = Session::get('success'))
+                                <div class="alert alert-success">
+                                <p>{{ $message }}</p>
+
+                                </div>
+
+                                @endif
                             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="margin-bottom: 15px; margin-left: 50%;">Talaba Qo'shish</button>
                             <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="_dot _inline-dot bg-primary"></span>
@@ -56,6 +74,7 @@
                                                 <th scope="col">Tug'ulgan kun</th>
                                                 <th scope="col">Ta'lim shakli</th>
                                                 <th scope="col">Guruh</th>
+                                                <th scope="col">Telefon raqami</th>
                                                 <th scope="col">Qo'shimcha ishlar</th>
                                             </tr>
                                         </thead>
@@ -78,7 +97,7 @@
                                                     <span>
                                                         <div class="ul-widget_user-card">
                                                             <div class="ul-widget4__img">
-                                                            <img src="{{ URL::to('/') }}/images/{{ $item->img  }}" id="userDropdown" alt="{{ $item->title }}">
+                                                            <img src="{{ $item->surat  }}" id="userDropdown" alt="{{ $item->ism }}">
 
 
                                                             </div>
@@ -86,15 +105,19 @@
                                                     </span>
                                                 </td>
                                                 <td>
-                                                <a href="{{ $item->alias }}" class="ul-widget4__title d-block">{{ $item->title}}</a>
-                                                <span>Bo'limlari: {{ $item->category->title}}</span>
+                                                <a href="#" class="ul-widget4__title d-block">{{ $item->familya}}</a>
+                                                <span><b>{{ $item->familyasi }} {{ $item->ismi }} {{ $item->sharifi}} </b></span>
                                                 </td>
 
-                                                <td>{{ $item->created_at }}</td>
+                                                <td>{{ $item->tugulgan_kun }} chi {{ $item->tugulgan_oy }} - {{ $item->tugulgan_yil }} yil</td>
+
+                                                <td>{{ $item->talim_shakli }} ta'lim shaklida</td>
+
+
                                                 <td>
-                                                    <span class="badge badge-pill @if($item->has_active == 0) badge-outline-danger  @else badge-outline-success @endif  p-2 m-1"> @if($item->has_active == 0) Activ emas! @else Bu sahifa active! @endif</span>
+                                                    <span class="badge badge-pill @if($item->has_active == 0) badge-outline-danger  @else badge-outline-success @endif  p-2 m-1"> @if($item->has_active == 0) Mavjud emas! @else Bu sahifa active! @endif</span>
                                                 </td>
-
+                                                <td>{{ $item->tell_nomer}}</td>
                                                 <td class="">
                                                     <button type="button" class="btn bg-white _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <span class="_dot _inline-dot bg-primary"></span>
@@ -121,6 +144,7 @@
                                                             Customize</a>
                                                     </div>
                                                 </td>
+
                                             </tr>
                                             <!-- end tr -->
                                             @endforeach
@@ -196,7 +220,7 @@
                                                             <div class="form-row">
                                                                 <div class="form-group col-md-6">
                                                                     <label for="inputtext14" class="ul-form__label">Yashash ma'nzili:</label>
-                                                                    <input type="text" class="form-control" id="inputtext14" placeholder="Toshkent viloyati, Bo'stonliq tumani, Shaxri">
+                                                                    <input type="text" class="form-control" name="yashash_manzili" id="inputtext14" placeholder="Toshkent viloyati, Bo'stonliq tumani, Shaxri">
                                                                     <small id="passwordHelpBlock" class="ul-form__text form-text ">
                                                                        Talabaning yashash manzilini kiriting
                                                                     </small>
@@ -204,7 +228,7 @@
                                                                 <div class="form-group col-md-3">
                                                                     <label for="inputEmail15" class="ul-form__label">Telefon nomeri:</label>
                                                                     <div class="input-right-icon">
-                                                                        <input type="text" class="form-control" id="inputEmail15" placeholder="+998(xx) xxx-xx-xx">
+                                                                        <input type="text" name="tell_nomer" class="form-control" id="inputEmail15" placeholder="+998(xx) xxx-xx-xx">
                                                                         <span class="span-right-input-icon">
                                                                             <i class="ul-form__icon i-Information"></i>
                                                                         </span>
@@ -218,7 +242,7 @@
                                                                 <div class="form-group col-md-3">
                                                                     <label for="inputEmail16" class="ul-form__label">Passport seriyasi va raqami:</label>
                                                                     <div class="input-right-icon">
-                                                                        <input type="text" class="form-control" id="inputEmail16" placeholder="AA 123456">
+                                                                        <input type="text" name="pass_num" class="form-control" id="inputEmail16" placeholder="AA 123456">
                                                                         <span class="span-right-input-icon">
                                                                             <i class="ul-form__icon i-Map-Marker"></i>
                                                                         </span>
@@ -245,7 +269,7 @@
                                                                     <label for="inputNumber" class="ul-form__label">Tug'ulgan kuni:</label>
                                                                     <div class="input-right-icon">
 
-                                                                    <select class="form-control text-center">
+                                                                    <select name="tugulgan_kun" class="form-control text-center">
                                                                         @for($i = 0; $i <= 31; $i++)
                                                                         <option value="{{$i}}" >{{ $i}} </option>
                                                                         @endfor
@@ -265,7 +289,7 @@
                                                                     <label for="inputEmail17" class="ul-form__label">Tug'ulgan oyi:</label>
                                                                     <div class="input-right-icon">
 
-                                                                    <select class="form-control text-center">
+                                                                    <select name="tugulgan_oy" class="form-control text-center">
                                                                         <option value="Yanvar">Yanvar</option>
                                                                         <option value="Fevral">Fevral</option>
                                                                         <option value="Mart">Mart</option>
@@ -293,7 +317,7 @@
                                                                         <label for="inputYear" class="ul-form__label">Tug'ulgan yili:</label>
                                                                         <div class="input-right-icon">
 
-                                                                        <select class="form-control text-center">
+                                                                        <select name="tugulgan_yil" class="form-control text-center">
 
 
                                                                             <?php
@@ -322,7 +346,7 @@
                                                           <div class="form-group col-md-5 mr-2">
                                                                 <label for="inputEmail17" class="ul-form__label">Tug'ulgan joyi:</label>
                                                                 <div class="input-right-icon">
-                                                                    <input type="text" class="form-control" id="inputEmail17" placeholder="Toshkent viloyati, ..... ..">
+                                                                    <input type="text" name="tugulgan_joy" class="form-control" id="inputEmail17" placeholder="Toshkent viloyati, ..... ..">
                                                                     <span class="span-right-input-icon">
                                                                         <i class="ul-form__icon i-New-Mail"></i>
                                                                     </span>
@@ -332,25 +356,31 @@
                                                                     Talabaning tug'ulgan joyini kiriting
                                                                 </small>
                                                             </div>
-{{--
-                                                                <div class="form-group col-md-4 ">
-                                                                    <label for="inputEmail18" class="ul-form__label">User Group:</label>
+
+
+                                                            <div class="form-group col-md-4 ">
+                                                                    <label for="inputEmail18" class="ul-form__label">Ta'lim shakli:</label>
                                                                     <div class="ul-form__radio-inline">
                                                                         <label class=" ul-radio__position radio radio-primary form-check-inline">
-                                                                            <input type="radio" name="radio" value="0">
-                                                                            <span class="ul-form__radio-font">Sales Person</span>
+                                                                            <input type="radio" name="talim_shakli" value="Kunduzgi">
+                                                                            <span class="ul-form__radio-font">Kunduzgi</span>
                                                                             <span class="checkmark"></span>
                                                                         </label>
-                                                                        <label class="ul-radio__position radio radio-primary">
-                                                                            <input type="radio" name="radio" value="0">
-                                                                            <span class="ul-form__radio-font">Customer</span>
+                                                                        <label class="ul-radio__position radio radio-primary" style="padding-right: 20px;  ">
+                                                                            <input type="radio" name="talim_shakli" value="Kechki">
+                                                                            <span class="ul-form__radio-font">Kechki</span>
+                                                                            <span class="checkmark"></span>
+                                                                        </label>
+                                                                        <label class="ul-radio__position radio radio-primary "  >
+                                                                            <input type="radio" name="talim_shakli" value="Sirtqi">
+                                                                            <span class="ul-form__radio-font">Sirtqi</span>
                                                                             <span class="checkmark"></span>
                                                                         </label>
                                                                     </div>
                                                                     <small id="passwordHelpBlock" class="ul-form__text form-text ">
-                                                                        Please select user group
+                                                                       Talabaning ta'lim shaklini belgilang
                                                                     </small>
-                                                                </div> --}}
+                                                                </div>
 
                                                             </div>
                                                             <div class="card-body">
@@ -375,7 +405,7 @@
                                                                           <i class="fa fa-picture-o"></i> Belgilang
                                                                         </a>
                                                                       </span>
-                                                                      <input id="thumbnail" class="form-control" type="text" name="filepath">
+                                                                      <input id="thumbnail" class="form-control" type="text" name="surat">
 
                                                                     </div>
                                                                     <style>
@@ -401,7 +431,7 @@
                                                                           <i class="fa fa-picture-o"></i> Belgilang
                                                                         </a>
                                                                       </span>
-                                                                      <input id="thumbnail2" class="form-control" type="text" name="filepath">
+                                                                      <input id="thumbnail2" class="form-control" type="text" name="pass_copy">
                                                                     </div>
                                                                     <div id="holder2" style="margin-top:15px;max-height:100px;"></div>
                                                                   </div>
@@ -435,6 +465,12 @@
                                                             </div>
                                                         </div> --}}
 
+                                                        <div class="modal-footer">
+
+
+                                                            <button type="submit" class="btn btn-primary m-1">Save changes</button>
+                                                            <button type="button" class="btn btn-secondary m-1" data-dismiss="modal">Close</button>
+                                                          </div>
                                                     </form>
 
                                                     <!-- end::form 3-->
@@ -460,12 +496,7 @@
 
                                             </div>
 
-                                            <div class="modal-footer">
 
-
-                                                <button type="button" class="btn btn-primary m-1">Save changes</button>
-                                                <button type="button" class="btn btn-secondary m-1" data-dismiss="modal">Close</button>
-                                              </div>
 
                                         </div>
 

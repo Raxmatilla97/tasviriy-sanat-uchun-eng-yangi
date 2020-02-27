@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class ChangeGuruhlar extends Migration
+class CreateGroups extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class ChangeGuruhlar extends Migration
      */
     public function up()
     {
-        Schema::table('guruhlar', function (Blueprint $table) {
-        $table->unsignedBigInteger('kurator_id')->default('1');
-        $table->foreign('kurator_id')->references('id')->on('kuratorlar');
+        Schema::create('groups', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('title');
+            $table->timestamps();
         });
     }
 
@@ -26,8 +27,6 @@ class ChangeGuruhlar extends Migration
      */
     public function down()
     {
-        Schema::table('guruhlar', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('groups');
     }
 }

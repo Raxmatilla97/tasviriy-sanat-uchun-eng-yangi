@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class ChangeKuratorlar extends Migration
+class ChangeStudents extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class ChangeKuratorlar extends Migration
      */
     public function up()
     {
-        Schema::table('kuratorlar', function (Blueprint $table) {
-            $table->unsignedBigInteger('oqituvchilar_id')->default('1');
-            $table->foreign('oqituvchilar_id')->references('id')->on('oqituvchilar');
+        Schema::table('students', function (Blueprint $table) {
+            $table->unsignedBigInteger('guruh_id')->nullable();
+            $table->foreign('guruh_id')->references('id')->on('groups');
+
         });
     }
 
@@ -26,7 +27,7 @@ class ChangeKuratorlar extends Migration
      */
     public function down()
     {
-        Schema::table('kuratorlar', function (Blueprint $table) {
+        Schema::table('students', function (Blueprint $table) {
             //
         });
     }
