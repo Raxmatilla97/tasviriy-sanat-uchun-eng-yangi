@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\admin;
 
+use App\Http\Controllers\Controller;
 use App\Student;
 use Illuminate\Http\Request;
 
@@ -12,9 +13,11 @@ class StudentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $data = $request->all();
+
+        return view('artuz.layouts.admin.views.students', compact('data'));
     }
 
     /**
@@ -35,7 +38,40 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'ismi' => 'required',
+            'familyasi' => 'required',
+            'sharifi' => 'required',
+            'yashash_manzili' => 'required',
+            'tell_nomer' => 'required',
+            'surat' => 'required',
+            'pass_num' => 'required',
+            'pass_ser' => 'required',
+            'tugulgan_kun' => 'required',
+            'guruh' => 'required',
+            'talim_shakli' => 'required',
+            'pass_copy' => 'required',
+
+        ]);
+
+        $image = $request->file('surat');
+
+        $image_name = rand(). '.' . $image->getClientOriginalExtension();
+        $image->move(public_path('images'), $image_name);
+        $input_data = array(
+            'ismi' => $request->ismi,
+            'familyasi' => $request->familyasi,
+            'sharifi' => $request->sharifi,
+            'yashash_manzili' => $request->yashash_manzili,
+            'tell_nomer' => $request->tell_nomer,
+            'surat' => $request->surat,
+            'pass_num' => $request->pass_num,
+            'pass_ser' => $request->pass_ser,
+            'tugulgan_kun' => $request->tugulgan_kun,
+            'guruh' =>  $request->guruh,
+            'talim_shakli' =>  $request->talim_shakli,
+            'pass_copy' =>  $request->pass_copy
+        );
     }
 
     /**

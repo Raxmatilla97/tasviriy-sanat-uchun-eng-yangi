@@ -23,6 +23,13 @@
                 </a>
                 <div class="triangle"></div>
             </li>
+            <li class="nav-item">
+                <a class="nav-item-hold" href="{{route('talabalar.index')}}">
+                        <i class="nav-icon i-Administrator"></i>
+                        <span class="nav-text">Talabalar</span>
+                    </a>
+                    <div class="triangle"></div>
+                </li>
         </ul>
     </div>
 

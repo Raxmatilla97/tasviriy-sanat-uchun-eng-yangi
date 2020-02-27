@@ -29,5 +29,9 @@ Route::prefix('admin-panel')->group(function () {
         'index' => 'yangiliklar',
 
     ]);
+    Route::resource('talabalar', 'admin\StudentController');
 
 });
+
+Route::view('/test', 'artuz.layouts.admin.views.test');
+

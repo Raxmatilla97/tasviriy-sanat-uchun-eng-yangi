@@ -13,8 +13,10 @@
 
             <link id="gull-theme" rel="stylesheet" href="{{ asset('admin/assets/styles/css/themes/lite-purple.min.css') }}">
             <link rel="stylesheet" href="{{ asset('admin/assets/styles/vendor/perfect-scrollbar.css') }}">
-            <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+            {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}
             <link href='https://cdn.jsdelivr.net/npm/froala-editor@3.0.6/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
+
+
         </head>
         <body class="text-left">
 
@@ -84,7 +86,14 @@
             <script src="{{ asset('admin/assets/js/customizer.script.js') }}"></script>
 
             {{-- <script src="{{ asset('js/app.js') }}"></script> --}}
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
 
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/js/mdb.min.js"></script>
 
             <script src="//cdn.ckeditor.com/4.13.1/full/ckeditor.js"></script>
 
